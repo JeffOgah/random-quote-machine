@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Helvetica, "Times New Roman", serif;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+  }
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#quote-box {
+  border: none;
+  border-radius: 5px;
+  padding: 1.5em;
+  width: 40em;
+}
+#text {
+  font-size: 1.5em;
+}
+#author {
+  font-size: 1.2em;
+}
+#quote-box-footer {
+  display: flex;
+  justify-content: space-between;
+}
+#tweet-quote {
+  font-size: 2em;
+  color: black;
+  &:hover {
+    color: #38A1F3;
+  }
+}
+
+@media (max-width:750px) {
+  #quote-box {
+    width: 70%; 
+  }
+}
